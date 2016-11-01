@@ -720,7 +720,7 @@ fmtTime :: String -> UTCTime -> B.ByteString
 fmtTime s t = BU.fromString $ formatTime defaultTimeLocale s t
 
 rfc822Time :: String
-rfc822Time = "%a, %_d %b %Y %H:%M:%S GMT"
+rfc822Time = "%a, %d %b %Y %H:%M:%S GMT"
 
 -- | Format time in RFC 822 format.
 fmtRfc822Time :: UTCTime -> B.ByteString
